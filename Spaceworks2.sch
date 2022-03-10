@@ -1,0 +1,92 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SW2:MLX90640_Breakout U?
+U 1 1 61E0858C
+P 3000 2650
+F 0 "U?" H 3178 3046 50  0000 L CNN
+F 1 "MLX90640_Breakout" H 3178 2955 50  0000 L CNN
+F 2 "" H 2850 3450 50  0001 C CNN
+F 3 "" H 2850 3450 50  0001 C CNN
+	1    3000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Spaceworks:ItsyBitsyM4 U?
+U 1 1 61E0983F
+P 3200 3600
+F 0 "U?" H 3200 4065 50  0000 C CNN
+F 1 "ItsyBitsyM4" H 3200 3974 50  0000 C CNN
+F 2 "" H 3000 3600 50  0001 C CNN
+F 3 "" H 3000 3600 50  0001 C CNN
+	1    3200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61E0A6EE
+P 4350 3200
+F 0 "#PWR?" H 4350 3050 50  0001 C CNN
+F 1 "+5V" H 4365 3373 50  0000 C CNN
+F 2 "" H 4350 3200 50  0001 C CNN
+F 3 "" H 4350 3200 50  0001 C CNN
+	1    4350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3600 4350 3600
+Wire Wire Line
+	4350 3600 4350 3200
+$Comp
+L power:+5V #PWR?
+U 1 1 61E0ACDB
+P 2500 1900
+F 0 "#PWR?" H 2500 1750 50  0001 C CNN
+F 1 "+5V" H 2515 2073 50  0000 C CNN
+F 2 "" H 2500 1900 50  0001 C CNN
+F 3 "" H 2500 1900 50  0001 C CNN
+	1    2500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1900 2500 2100
+Wire Wire Line
+	2500 2100 2750 2100
+NoConn ~ 2750 2200
+$Comp
+L power:GND #PWR?
+U 1 1 61E0B3C0
+P 1950 2400
+F 0 "#PWR?" H 1950 2150 50  0001 C CNN
+F 1 "GND" H 1955 2227 50  0000 C CNN
+F 2 "" H 1950 2400 50  0001 C CNN
+F 3 "" H 1950 2400 50  0001 C CNN
+	1    1950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2300 1950 2300
+Wire Wire Line
+	1950 2300 1950 2400
+Text GLabel 2750 2400 0    50   Input ~ 0
+SCL
+Text GLabel 2750 2500 0    50   Input ~ 0
+SDA
+Text GLabel 3750 4400 2    50   Input ~ 0
+SCL
+Text GLabel 3750 4500 2    50   Input ~ 0
+SDA
+$EndSCHEMATC
